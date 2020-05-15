@@ -1,5 +1,5 @@
 const core = require('@actions/core');
-const unsatisfiedRequirements = require('labels');
+const unsatisfiedRequirements = require('./labels');
 
 async function run() {
     const inputLabels = JSON.parse(core.getInput('labels'));
