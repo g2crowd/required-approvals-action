@@ -11,5 +11,9 @@
   },
   "devDependencies": {
     "jasmine": "^3.5.0"
+  },
+  "dependencies": {
+    "@actions/core": "^1.2.4",
+    "@actions/github": "^2.2.0"
   }
 }
