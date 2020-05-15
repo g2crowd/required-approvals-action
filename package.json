@@ -1,0 +1,12 @@
+{
+  "name": "matcher",
+  "version": "1.0.0",
+  "description": "matcher.",
+  "main": "labels.js",
+  "scripts": {
+    "test": "node_modules/jasmine/bin/jasmine.js"
+  },
+  "devDependencies": {
+    "jasmine": "^3.5.0"
+  }
+}

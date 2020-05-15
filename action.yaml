@@ -1,0 +1,10 @@
+name: 'Required Approvals'
+description: 'Check labels for convention ending with -required/-approved'
+inputs:
+  labels:
+    description: 'JSON array of strings'
+    required: true
+    default: '[]'
+runs:
+  using: 'node12'
+  main: 'index.js'
