@@ -6,14 +6,10 @@
   "scripts": {
     "test": "node_modules/jasmine/bin/jasmine.js"
   },
-  "dependencies": {
-    "@actions/core": "^1.1.1"
-  },
   "devDependencies": {
     "jasmine": "^3.5.0"
   },
   "dependencies": {
-    "@actions/core": "^1.2.4",
-    "@actions/github": "^2.2.0"
+    "@actions/core": "^1.2.6"
   }
 }
