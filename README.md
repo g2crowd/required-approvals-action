@@ -20,4 +20,3 @@ yarn test
 1. Install `vercel/ncc` by running this command in your terminal. `npm i -g @vercel/ncc`
 
 2. Compile your index.js file. `ncc build index.js --license licenses.txt`
-   > > > > > > > 461c87c (Switch to single github action)
