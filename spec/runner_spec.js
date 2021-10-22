@@ -34,8 +34,8 @@ describe('run', () => {
   });
 
   it('should call jiraStory with the message text', function () {
-    expect(mockCore.getInput).toHaveBeenCalledWith('message_text');
-    expect(mockJiraStory).toHaveBeenCalledWith('message_text');
+    expect(mockCore.getInput).toHaveBeenCalledWith('commit_message');
+    expect(mockJiraStory).toHaveBeenCalledWith('commit_message');
   });
 
   it('should call jiraLabels with the jira story and access parameters', function () {
