@@ -8,6 +8,28 @@ The convention operates based on the `-required` and `-approved` suffixes and wo
 #Inputs
 Please check the `action.yml` for a full list of required and optional inputs.
 
+#Sample Action
+
+```yaml
+name: Jira Approval
+on:
+  push:
+    branches-ignore:
+      - main
+jobs:
+  job:
+    name: Ticket Labels
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check Jira Ticket Labels
+        uses: g2crowd/required-approvals-action@v1.6
+        with:
+          commit_message: ${{ github.event.commits[0]['message'] }}
+          jira_user: ${{secrets.JIRANAME}}
+          jira_token: ${{secrets.JIRATOKEN}}
+          jira_url: organizaion.atlassian.net
+```
+
 # Running Tests
 
 ```bash
