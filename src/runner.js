@@ -5,9 +5,10 @@ const unsatisfiedRequirements = require('./missing_labels');
 
 async function run() {
   // get the JIRA number from the message
-  const storyNum = jiraStory(core.getInput('commit_message'));
+  const storyNum = jiraStory(core.getInput('jira_story_source'));
   if (storyNum == null) {
     console.log('No JIRA story number found');
+    core.setFailed('No JIRA story number found');
     return;
   }
 

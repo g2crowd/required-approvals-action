@@ -1,9 +1,17 @@
 name: 'Required JIRA Approvals'
 description: 'Check labels for convention ending with -required/-approved'
 inputs:
-  commit_message:
-    description: The commit message that contains the JIRA story.
-    required: true
+  jira_story_source: 
+    description: Where to look for the jira story
+    required: false
+    default: ${GITHUB_REF}
+  jira_story_regex:
+    description: Provide a regex to capture the jira story
+    required: false
+    default: /([a-z]+-[0-9]+)/gi
+  # commit_message:
+  #   description: The commit message that contains the JIRA story.
+  #   required: true
   jira_user:
     description: The email of the jira user.
     required: true
