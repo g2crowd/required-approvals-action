@@ -3,18 +3,20 @@
 
 
 "@actions/core@^1.2.6":
-  version "1.6.0"
-  resolved "https://registry.yarnpkg.com/@actions/core/-/core-1.6.0.tgz#0568e47039bfb6a9170393a73f3b7eb3b22462cb"
-  integrity sha512-NB1UAZomZlCV/LmJqkLhNTqtKfFXJZAUPcfl/zqG7EfsQdeUJtaWO98SGbuQ3pydJ3fHl2CvI/51OKYlCYYcaw==
+  version "1.9.1"
+  resolved "https://registry.yarnpkg.com/@actions/core/-/core-1.9.1.tgz#97c0201b1f9856df4f7c3a375cdcdb0c2a2f750b"
+  integrity sha512-5ad+U2YGrmmiw6du20AQW5XuWo7UKN2052FjSV7MX+Wfjf8sCqcsZe62NfgHys4QI4/Y+vQvLKYL8jWtA1ZBTA==
   dependencies:
-    "@actions/http-client" "^1.0.11"
+    "@actions/http-client" "^2.0.1"
+    uuid "^8.3.2"
 
-"@actions/http-client@^1.0.11":
-  version "1.0.11"
-  resolved "https://registry.yarnpkg.com/@actions/http-client/-/http-client-1.0.11.tgz#c58b12e9aa8b159ee39e7dd6cbd0e91d905633c0"
-  integrity sha512-VRYHGQV1rqnROJqdMvGUbY/Kn8vriQe/F9HR2AlYHzmKuM/p3kjNuXhmdBfcVgsvRWTz5C5XW5xvndZrVBuAYg==
+"@actions/http-client@^2.0.1":
+  version "2.2.1"
+  resolved "https://registry.yarnpkg.com/@actions/http-client/-/http-client-2.2.1.tgz#ed3fe7a5a6d317ac1d39886b0bb999ded229bb38"
+  integrity sha512-KhC/cZsq7f8I4LfZSJKgCvEwfkE8o1538VoBeoGzokVLLnbFDEAdFD3UhoMklxo2un9NJVBdANOresx7vTHlHw==
   dependencies:
-    tunnel "0.0.6"
+    tunnel "^0.0.6"
+    undici "^5.25.4"
 
 "@babel/code-frame@^7.0.0", "@babel/code-frame@^7.12.13", "@babel/code-frame@^7.14.5", "@babel/code-frame@^7.15.8":
   version "7.15.8"
@@ -337,6 +339,11 @@
     js-yaml "^3.13.1"
     minimatch "^3.0.4"
     strip-json-comments "^3.1.1"
+
+"@fastify/busboy@^2.0.0":
+  version "2.1.1"
+  resolved "https://registry.yarnpkg.com/@fastify/busboy/-/busboy-2.1.1.tgz#b9da6a878a371829a0502c9b6c1c143ef6663f4d"
+  integrity sha512-vBZP4NlzfOlerQTnba4aqZoMhE/a9HY7HRqoOPaETQcSQuWEIyZMHGfVu6w9wGtGK5fED5qRs2DteVCjOH60sA==
 
 "@humanwhocodes/config-array@^0.6.0":
   version "0.6.0"
@@ -3362,7 +3369,7 @@ tunnel-agent@^0.6.0:
   dependencies:
     safe-buffer "^5.0.1"
 
-tunnel@0.0.6:
+tunnel@^0.0.6:
   version "0.0.6"
   resolved "https://registry.yarnpkg.com/tunnel/-/tunnel-0.0.6.tgz#72f1314b34a5b192db012324df2cc587ca47f92c"
   integrity sha512-1h/Lnq9yajKY2PEbBadPXj3VxsDDu844OnaAo52UVmIzIvwwtBPIuNvkjuzBlTWpfJyUbG3ez0KSBibQkj4ojg==
@@ -3408,6 +3415,13 @@ typedarray-to-buffer@^3.1.5:
   dependencies:
     is-typedarray "^1.0.0"
 
+undici@^5.25.4:
+  version "5.28.3"
+  resolved "https://registry.yarnpkg.com/undici/-/undici-5.28.3.tgz#a731e0eff2c3fcfd41c1169a869062be222d1e5b"
+  integrity sha512-3ItfzbrhDlINjaP0duwnNsKpDQk3acHI3gVJ1z4fmwMK31k5G9OVIAMLSIaP6w4FaGkaAkN6zaQO9LUvZ1t7VA==
+  dependencies:
+    "@fastify/busboy" "^2.0.0"
+
 universalify@^0.1.2:
   version "0.1.2"
   resolved "https://registry.yarnpkg.com/universalify/-/universalify-0.1.2.tgz#b646f69be3942dabcecc9d6639c80dc105efaa66"
@@ -3424,6 +3438,11 @@ uuid@^3.3.2:
   version "3.4.0"
   resolved "https://registry.yarnpkg.com/uuid/-/uuid-3.4.0.tgz#b23e4358afa8a202fe7a100af1f5f883f02007ee"
   integrity sha512-HjSDRw6gZE5JMggctHBcjVak08+KEVhSIiDzFnT9S9aegmp85S/bReBVTb4QTFaRNptJ9kuYaNhnbNEOkbKb/A==
+
+uuid@^8.3.2:
+  version "8.3.2"
+  resolved "https://registry.yarnpkg.com/uuid/-/uuid-8.3.2.tgz#80d5b5ced271bb9af6c445f21a1a04c606cefbe2"
+  integrity sha512-+NYs2QeMWy+GWFOEm9xnn6HCDp0l7QBD7ml8zLUmJ+93Q5NF0NocErnwkTkXVFNiX3/fpC6afS8Dhb/gz7R7eg==
 
 v8-compile-cache@^2.0.3:
   version "2.3.0"
