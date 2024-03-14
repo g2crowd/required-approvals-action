@@ -2,7 +2,10 @@ name: 'Required JIRA Approvals'
 description: 'Check labels for convention ending with -required/-approved'
 inputs:
   commit_message:
-    description: The commit message that contains the JIRA story.
+    description: The commit message that may contain the JIRA story.
+    required: true
+  pr_title:
+    description: The pull request title that may contain the JIRA story.
     required: true
   jira_user:
     description: The email of the jira user.
