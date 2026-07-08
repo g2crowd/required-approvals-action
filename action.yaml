@@ -1,0 +1,33 @@
+name: 'Required JIRA Approvals'
+description: 'Check labels for convention ending with -required/-approved'
+inputs:
+  commit_message:
+    description: The commit message that may contain the JIRA story.
+    required: true
+  pr_title:
+    description: The pull request title that may contain the JIRA story.
+    required: true
+  jira_user:
+    description: The email of the jira user.
+    required: true
+  jira_token:
+    description: The API token associated to the user.
+    required: true
+  jira_url:
+    description: The base URL for jira
+    required: true
+  default_labels:
+    description: Assumed required labels
+    required: false
+    default: 'design-qa-required|product-qa-required'
+  required_suffix:
+    description: Append this to the end of a label to mark it required
+    required: false
+    default: 'required'
+  approved_suffix:
+    description: Append this to the end of a label to mark it approved
+    required: false
+    default: 'approved'
+runs:
+  using: 'node16'
+  main: 'dist/index.js'
