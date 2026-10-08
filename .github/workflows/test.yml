@@ -23,5 +23,5 @@ jobs:
         with:
           node-version: ${{ matrix.node-version }}
           cache: 'npm'
-      - run: yarn install --frozen-lockfile
+      - run: yarn install --immutable
       - run: yarn test
